@@ -1,0 +1,22 @@
+{
+  "objects": [
+    {
+      "group": "example", "class": "Drifter",
+      "components": {
+        "example:Position": { "X": 2, "Y": 2 },
+        "example:Velocity": { "X": 6, "Y": 2 },
+        "example:Health": { "Current": 5, "Max": 5 },
+        "example:Label": { "Name": "alpha" }
+      }
+    },
+    {
+      "group": "example", "class": "Drifter",
+      "components": {
+        "example:Position": { "X": 15, "Y": 8 },
+        "example:Velocity": { "X": -4, "Y": -3 },
+        "example:Health": { "Current": 3, "Max": 3 },
+        "example:Label": { "Name": "beta" }
+      }
+    }
+  ]
+}

@@ -31,3 +31,9 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Build outputs of every contribution (go build -o build/<name>, generated docs)
+build/
+
+# Plan files of the plan and implement skills
+/plan/

@@ -1,0 +1,9 @@
+{
+  "god": {
+    "specs": "build/god",
+    "out": "build/god/project.god.json"
+  },
+  "godDoc": {
+    "out": "build/god-doc"
+  }
+}
