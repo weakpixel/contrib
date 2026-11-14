@@ -23,5 +23,3 @@ make bench   # per-entity cost of a Lua system
 make stubs   # LuaLS stubs of the example in build/example.lua
 make wasm-test
 ```
-
-The weakpixel engine repository is private for now: `GOPRIVATE=github.com/weakpixel/engine` (the Makefile exports it).

@@ -18,7 +18,7 @@ make wasm-test   # every module under GOOS=js GOARCH=wasm (Node)
 make -C lua bench
 ```
 
-Run `make all` and `make wasm-test` once before opening a PR; CI runs both and fails on a generate or gofmt diff. While iterating, run only the tests of the package you changed. The weakpixel engine repository is private for now: `GOPRIVATE=github.com/weakpixel/engine` (the Makefiles export it).
+Run `make all` and `make wasm-test` once before opening a PR; CI runs both and fails on a generate or gofmt diff. While iterating, run only the tests of the package you changed.
 
 ## Rules
 

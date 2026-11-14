@@ -1,6 +1,3 @@
-# GOPRIVATE=github.com/weakpixel/engine while the weakpixel engine repository is private.
-export GOPRIVATE ?= github.com/weakpixel/engine
-
 # Generate, format, vet and test with the race detector.
 .PHONY: all
 all:
@@ -37,7 +34,7 @@ stubs:
 WASM_ENV = env -i HOME="$(HOME)" PATH="$(shell go env GOROOT)/lib/wasm:$(PATH)" \
 	GOPATH="$(shell go env GOPATH)" GOMODCACHE="$(shell go env GOMODCACHE)" \
 	GOCACHE="$(shell go env GOCACHE)" GOTOOLCHAIN="$(shell go env GOTOOLCHAIN)" \
-	GOPRIVATE="$(GOPRIVATE)" GOFLAGS=-mod=mod GOOS=js GOARCH=wasm
+	GOFLAGS=-mod=mod GOOS=js GOARCH=wasm
 
 .PHONY: wasm-test
 wasm-test:

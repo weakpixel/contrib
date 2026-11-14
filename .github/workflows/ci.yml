@@ -17,12 +17,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      # The Weakpixel engine repository is private for now. WPIX_ENGINE_TOKEN is a token
-      # that can read it; remove this step and GOPRIVATE when it is public.
-      - name: access to the weakpixel engine repository
-        env:
-          WPIX_ENGINE_TOKEN: ${{ secrets.WPIX_ENGINE_TOKEN }}
-        run: git config --global url."https://x-access-token:${WPIX_ENGINE_TOKEN}@github.com/weakpixel/engine".insteadOf "https://github.com/weakpixel/engine"
       - name: make all
         run: make all
       - name: gofmt and generate left no changes

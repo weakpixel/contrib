@@ -11,7 +11,7 @@ make all         # every module: generate, fmt, vet, test -race
 make wasm-test   # every module under GOOS=js GOARCH=wasm (Node)
 ```
 
-The weakpixel engine repository is private for now: set `GOPRIVATE=github.com/weakpixel/engine` (the Makefiles export it). Modules are tagged per folder (`lua/v0.0.1`). The first tag is pushed by the maintainer.
+Modules are tagged per folder (`lua/v0.0.1`). The first tag is pushed by the maintainer.
 
 ## Adding a contribution
 
