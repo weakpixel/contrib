@@ -15,10 +15,10 @@ import (
 // supportedVersion is the only "version" of a GOD file the stubs command reads.
 const supportedVersion = 0
 
-// generatorName is the "generator" of the merged GOD that weakpixel doc
+// generatorName is the "generator" of the merged GOD that wpix doc
 // --format god writes. Directory walks skip such files, so a merged GOD in the
 // specs folder is not read back as an input.
-const generatorName = "weakpixel doc"
+const generatorName = "wpix doc"
 
 // document is the merged content of all loaded definition files.
 type document struct {
@@ -67,7 +67,7 @@ type component struct {
 	def god.ComponentSchema // as read
 }
 
-// godFile is a GOD file written by weakpixel gen.
+// godFile is a GOD file written by wpix gen.
 type godFile struct {
 	Version    int                   `json:"version"`
 	Generator  string                `json:"generator"`
@@ -103,7 +103,7 @@ func loadDocument(title string, files []string) (*document, error) {
 			continue
 		}
 		if f.Version != supportedVersion {
-			errs = append(errs, fmt.Errorf("%s: unsupported version %d (want %d); regenerate with weakpixel gen", file, f.Version, supportedVersion))
+			errs = append(errs, fmt.Errorf("%s: unsupported version %d (want %d); regenerate with wpix gen", file, f.Version, supportedVersion))
 			continue
 		}
 		loaded = append(loaded, f)

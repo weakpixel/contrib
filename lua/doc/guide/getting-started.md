@@ -14,7 +14,7 @@ type Hero struct {
 type Health struct{ Current, Max int64 }
 ```
 
-Run `go generate` (`weakpixel gen`) so the object is registered. See [Game Object API](https://github.com/weakpixel/engine/blob/main/doc/guide/ecs/api-game-object.md). Pointer components are optional and writable. Value components are required and read-only for scripts.
+Run `go generate` (`wpix gen`) so the object is registered. See [Game Object API](https://github.com/weakpixel/engine/blob/main/doc/guide/ecs/api-game-object.md). Pointer components are optional and writable. Value components are required and read-only for scripts.
 
 ## 2. Write a script
 

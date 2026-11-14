@@ -6,4 +6,4 @@
 // in the Lua module); the Lua script in ../scripts sees the same objects through it.
 package game
 
-//go:generate go run github.com/weakpixel/engine/tools/weakpixel gen
+//go:generate go run github.com/weakpixel/engine/tools/wpix gen
