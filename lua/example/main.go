@@ -1,4 +1,4 @@
-// Command example runs a Lua script as a Weakpixel Engine system.
+// Command example runs a Lua script as a Weakpixel engine system.
 //
 // From the lua folder of the contrib repository:
 //

@@ -1,6 +1,6 @@
 # lua
 
-Lua (GopherLua) systems for the [Weakpixel Engine](https://github.com/weakpixel/engine), driven by registered Game Object schemas. Module `github.com/weakpixel/contrib/lua`, package `ecslua`. It uses the `god` package of the weakpixel engine, the [ECS](https://github.com/weakpixel/ecs) and [GopherLua](https://github.com/yuin/gopher-lua); the weakpixel engine does not know about it.
+Lua (GopherLua) systems for the [Weakpixel engine](https://github.com/weakpixel/engine), driven by registered Game Object schemas. Module `github.com/weakpixel/contrib/lua`, package `ecslua`. It uses the `god` package of the weakpixel engine, [Weakpixel ECS](https://github.com/weakpixel/ecs) and [GopherLua](https://github.com/yuin/gopher-lua); the weakpixel engine does not know about it.
 
 ```bash
 go get github.com/weakpixel/contrib/lua

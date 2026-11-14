@@ -20,7 +20,7 @@ Write documentation for a module of this repository (for example `lua/`). This s
 - **Behavior the docs left open** (for example the exact `: <detail>` suffix of a panic): document what the code does, in the same change.
 - **Panic messages are API.** Copy them exactly into the guide.
 - **Guide pages** state the public API and behavior: what it does, a minimal runnable example, contracts (ownership, pointer validity, cost), panics. No internals.
-- **Engine links.** The modules are add-ons of the Weakpixel Engine, so the docs name and link the engine. Link engine pages with absolute GitHub URLs (https://github.com/weakpixel/engine/blob/main/doc/...), never with relative paths out of the module.
+- **Engine links.** The modules are add-ons of the Weakpixel engine, so the docs name and link the engine. Link engine pages with absolute GitHub URLs (https://github.com/weakpixel/engine/blob/main/doc/...), never with relative paths out of the module.
 - **Design page** explains why. Link to the guide for signatures; do not copy the API.
 - **Go doc comments**: every exported identifier gets one stating what it does, its contract (preconditions, ownership, pointer validity, cost) and which panics it can raise. Start with the identifier's name. Explain non-obvious performance tricks inline.
 - **New pages** are linked from the documentation list in the module's `README.md`.

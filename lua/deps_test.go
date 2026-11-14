@@ -8,7 +8,7 @@ import (
 
 // TestEngineModuleDependencies enforces the module rule of the Lua module:
 // it, its tests included, uses only the exported god package of the weakpixel engine
-// module github.com/weakpixel/engine (and the ECS module
+// module github.com/weakpixel/engine (and the Weakpixel ECS module
 // github.com/weakpixel/ecs). Game Objects for tests are its own
 // (internal/luatest), never generated output of another module.
 func TestEngineModuleDependencies(t *testing.T) {

@@ -1,6 +1,6 @@
 # contrib
 
-Optional add-on modules for the Weakpixel Engine (repository weakpixel/engine). Every contribution is a folder with its own `go.mod` (module `github.com/weakpixel/contrib/<name>`), README, docs and tests. The weakpixel engine's code, docs and rules live in the weakpixel engine repository; read its CLAUDE.md and `doc/` for anything about the engine.
+Optional add-on modules for the Weakpixel engine (repository weakpixel/engine). Every contribution is a folder with its own `go.mod` (module `github.com/weakpixel/contrib/<name>`), README, docs and tests. The weakpixel engine's code, docs and rules live in the weakpixel engine repository; read its CLAUDE.md and `doc/` for anything about the engine.
 
 | Path | What |
 | --- | --- |

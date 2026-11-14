@@ -1,6 +1,6 @@
 # contrib
 
-Contributions to the [Weakpixel Engine](https://github.com/weakpixel/engine): optional modules that build on it but do not belong in the engine. Every contribution is a folder with its own `go.mod`, its own README, docs and tests, so a game depends only on the ones it uses.
+Contributions to the [Weakpixel engine](https://github.com/weakpixel/engine): optional modules that build on it but do not belong in the engine. Every contribution is a folder with its own `go.mod`, its own README, docs and tests, so a game depends only on the ones it uses.
 
 | Folder | Module | What |
 | --- | --- | --- |

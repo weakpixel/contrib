@@ -1,4 +1,4 @@
-// Package ecslua runs Lua 5.1 scripts (GopherLua, pure Go) as Weakpixel Engine systems.
+// Package ecslua runs Lua 5.1 scripts (GopherLua, pure Go) as Weakpixel engine systems.
 //
 // A script names a registered Game Object (group:class) and receives its
 // components with field access by JSON name, validated against the GOD
