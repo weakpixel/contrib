@@ -19,4 +19,4 @@ Create a folder with its own `go.mod` (module `github.com/weakpixel/contrib/<nam
 
 ## License
 
-MIT, see [LICENSE](LICENSE). Third-party notices of a module are in its `NOTICE.md`.
+MIT, see [LICENSE](LICENSE). Third-party notices of a module are in its `THIRD_PARTY_NOTICES.md`.

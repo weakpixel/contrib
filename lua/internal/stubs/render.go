@@ -1,6 +1,7 @@
 package stubs
 
 import (
+	"errors"
 	"slices"
 	"strings"
 	"unicode"
@@ -389,6 +390,9 @@ func (w *luaWriter) world(objects []*object) {
 // definitions in several files collapse into one, different ones under the same
 // key are an error; all problems are reported together.
 func Render(title string, inputs []string) (string, error) {
+	if len(inputs) == 0 {
+		return "", errors.New("no GOD files given")
+	}
 	files, err := collect(inputs)
 	if err != nil {
 		return "", err

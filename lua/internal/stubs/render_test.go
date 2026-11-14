@@ -189,4 +189,7 @@ func TestRender(t *testing.T) {
 	if _, err := Render("x", []string{"missing.god.json"}); err == nil {
 		t.Error("a missing input is not an error")
 	}
+	if _, err := Render("x", nil); err == nil || !strings.Contains(err.Error(), "no GOD files given") {
+		t.Errorf("no inputs: error = %v", err)
+	}
 }
