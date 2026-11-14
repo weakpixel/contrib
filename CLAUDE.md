@@ -4,7 +4,7 @@ Optional add-on modules for the Weakpixel engine (repository weakpixel/engine). 
 
 | Path | What |
 | --- | --- |
-| `lua/` | Module `github.com/weakpixel/contrib/lua`, package `ecslua`: Lua (GopherLua) systems driven by GOD schemas. `internal/stubs` and `cmd/ecslua` write LuaLS stubs; `internal/luatest` and `example/game` are test Game Objects generated with `weakpixel gen` |
+| `lua/` | Module `github.com/weakpixel/contrib/lua`, package `ecslua`: Lua (GopherLua) systems driven by GOD schemas. `internal/stubs` and `cmd/ecslua` write LuaLS stubs; `internal/luatest` and `example/game` are test Game Objects generated with `wpix gen` |
 
 ## The docs are the spec
 

@@ -34,8 +34,8 @@ github.com/weakpixel/asset v0.0.1 h1:PkIXVQgU2Jm8iqQQ75jy6u2W7YTLKkLttg54CwDXJww
 github.com/weakpixel/asset v0.0.1/go.mod h1:IWIyoGqh0kDCigC0dddKrsxV929ft9S/TX6f8MlJs5I=
 github.com/weakpixel/ecs v0.0.1 h1:9gEO/+v4XPiijeVScJHgcY3uTxCZqkCOzL77WcyVod0=
 github.com/weakpixel/ecs v0.0.1/go.mod h1:iJRzQcdyAGwEnlk4mye+SKEul2CEG6X6i+THoivQjLE=
-github.com/weakpixel/engine v0.0.0-20261114114223-f4b9f1675910 h1:avJwYMKorguj/7GWH5e9n8Md12M3/ObaRKk3rpV1+OY=
-github.com/weakpixel/engine v0.0.0-20261114114223-f4b9f1675910/go.mod h1:vkmc8YdtTMSYR1JpwCdcFlIhKTAkSGH1dZ2/W1tylHQ=
+github.com/weakpixel/engine v0.0.0-20261114125741-20416bfe134e h1:t+S2cb5Q/m3PNAJA0OqG8E0f7H5bJ7KU4oc9MrwPZxc=
+github.com/weakpixel/engine v0.0.0-20261114125741-20416bfe134e/go.mod h1:vkmc8YdtTMSYR1JpwCdcFlIhKTAkSGH1dZ2/W1tylHQ=
 github.com/yuin/gopher-lua v1.1.2 h1:yF/FjE3hD65tBbt0VXLE13HWS9h34fdzJmrWRXwobGA=
 github.com/yuin/gopher-lua v1.1.2/go.mod h1:7aRmXIWl37SqRf0koeyylBEzJ+aPt8A+mmkQ4f1ntR8=
 go.yaml.in/yaml/v3 v3.0.4/go.mod h1:DhzuOOF2ATzADvBadXxruRBLzYTpT36CKvDb3+aBEFg=

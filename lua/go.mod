@@ -4,12 +4,12 @@ go 1.27
 
 tool (
 	github.com/weakpixel/contrib/lua/cmd/ecslua
-	github.com/weakpixel/engine/tools/weakpixel
+	github.com/weakpixel/engine/tools/wpix
 )
 
 require (
 	github.com/weakpixel/ecs v0.0.1
-	github.com/weakpixel/engine v0.0.0-20261114114223-f4b9f1675910
+	github.com/weakpixel/engine v0.0.0-20261114125741-20416bfe134e
 	github.com/yuin/gopher-lua v1.1.2
 )
 
