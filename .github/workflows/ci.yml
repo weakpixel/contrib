@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.27"
+          cache-dependency-path: "*/go.sum"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # The engine repository is private for now. ENGINE_TOKEN is a token
+      # that can read it; remove this step and GOPRIVATE when it is public.
+      - name: access to the engine repository
+        env:
+          ENGINE_TOKEN: ${{ secrets.ENGINE_TOKEN }}
+        run: git config --global url."https://x-access-token:${ENGINE_TOKEN}@github.com/weakpixel/engine".insteadOf "https://github.com/weakpixel/engine"
+      - name: make all
+        run: make all
+      - name: gofmt and generate left no changes
+        run: git diff --exit-code
+      - name: make wasm-test
+        run: make wasm-test
