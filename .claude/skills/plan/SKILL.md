@@ -20,7 +20,7 @@ Write the plan **directly** to `<project>/plan/<plan-slug>.plan.md` with the Wri
 ## Steps
 
 1. **Understand the request.** If `$ARGUMENTS` is empty, ask what to plan.
-2. **Load context.** Read the relevant engine docs (the spec lives in the weakpixel/engine repository's `doc/`; the module's own docs are in its `doc/` folder). Read the code the plan will touch, and check what already exists.
+2. **Load context.** Read the relevant weakpixel engine docs (the spec lives in the weakpixel/engine repository's `doc/`; the module's own docs are in its `doc/` folder). Read the code the plan will touch, and check what already exists.
 3. **Check existing plans.** `ls plan/`. If a plan already covers this request, update that file instead of creating a duplicate, and tell the user.
 4. **Resolve decisions.** For anything the docs leave open, recommend an option. Ask the user (AskUserQuestion) only when the choice really is theirs and changes the plan. Record every decision in the plan, including the ones you made yourself.
 5. **Write the plan** using the template below. Choose a short kebab-case slug that describes the outcome (`asset-packages`, `typed-query-allocs`), not the date.
@@ -31,7 +31,7 @@ Write the plan **directly** to `<project>/plan/<plan-slug>.plan.md` with the Wri
 - Steps are small, ordered and independently verifiable. Each step names the files it touches and how to check it (a test name, a command). Put tests in the same step as the code they cover.
 - Make the scope explicit: list what's out of scope so `/implement` doesn't drift.
 - Write acceptance criteria that can be checked: commands that must pass, behaviors with a named test, doc sections that must be updated.
-- Reference the spec by file and section (the engine's `doc/guide/engine/assets.md#hot-reload`) instead of copying it.
+- Reference the spec by file and section (the weakpixel engine's `doc/guide/engine/assets.md#hot-reload`) instead of copying it.
 - If the work is too big for one session (roughly 15 steps or more), split it into several plans and link them under **Related plans**.
 - Every plan's last step is: run `make all`, then update the docs for any decisions or API changes.
 

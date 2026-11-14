@@ -1,4 +1,4 @@
-# GOPRIVATE=github.com/weakpixel/engine while the engine repository is private.
+# GOPRIVATE=github.com/weakpixel/engine while the weakpixel engine repository is private.
 export GOPRIVATE ?= github.com/weakpixel/engine
 
 # Generate, format, vet and test with the race detector.

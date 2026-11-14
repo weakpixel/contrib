@@ -19,7 +19,7 @@ jobs:
           node-version: 22
       # The engine repository is private for now. ENGINE_TOKEN is a token
       # that can read it; remove this step and GOPRIVATE when it is public.
-      - name: access to the engine repository
+      - name: access to the weakpixel engine repository
         env:
           ENGINE_TOKEN: ${{ secrets.ENGINE_TOKEN }}
         run: git config --global url."https://x-access-token:${ENGINE_TOKEN}@github.com/weakpixel/engine".insteadOf "https://github.com/weakpixel/engine"

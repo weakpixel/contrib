@@ -1,6 +1,6 @@
 # Lua scripting guide
 
-Lua systems for the Weakpixel Engine. Module `github.com/weakpixel/contrib/lua` (package `ecslua`), on [GopherLua](https://github.com/yuin/gopher-lua) (pure Go, Lua 5.1). It is an optional layer on top of [`system`](https://github.com/weakpixel/ecs/blob/main/doc/api-systems.md) and the Game Objects of [`god`](https://github.com/weakpixel/engine/blob/main/doc/guide/ecs/game-object-definition.md), in a separate module of the [contrib repository](https://github.com/weakpixel/contrib): the engine never depends on Lua, and `ecs`, `god` and `ecs/system` know nothing about it.
+Lua systems for the Weakpixel Engine. Module `github.com/weakpixel/contrib/lua` (package `ecslua`), on [GopherLua](https://github.com/yuin/gopher-lua) (pure Go, Lua 5.1). It is an optional layer on top of [`system`](https://github.com/weakpixel/ecs/blob/main/doc/api-systems.md) and the Game Objects of [`god`](https://github.com/weakpixel/engine/blob/main/doc/guide/ecs/game-object-definition.md), in a separate module of the [contrib repository](https://github.com/weakpixel/contrib): the weakpixel engine never depends on Lua, and `ecs`, `god` and `ecs/system` know nothing about it.
 
 ```go
 import ecslua "github.com/weakpixel/contrib/lua"

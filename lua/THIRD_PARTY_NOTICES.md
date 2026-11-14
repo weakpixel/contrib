@@ -8,4 +8,4 @@ The Lua module uses these libraries under their licenses. The module's own code 
 | Weakpixel ECS (`github.com/weakpixel/ecs`) | MIT | https://github.com/weakpixel/ecs |
 | Weakpixel Engine (`github.com/weakpixel/engine`) | MIT | https://github.com/weakpixel/engine |
 
-The engine's own dependencies and their notices are listed in the engine repository's `THIRD_PARTY_NOTICES.md`.
+The weakpixel engine's own dependencies and their notices are listed in the weakpixel engine repository's `THIRD_PARTY_NOTICES.md`.

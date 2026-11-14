@@ -4,7 +4,7 @@ How the Lua module exposes Game Objects to Lua without generated bindings. The s
 
 ## Shape
 
-- **A separate module** (`github.com/weakpixel/contrib/lua`, in the `lua/` folder of weakpixel/contrib), the only place gopher-lua is imported. It uses exported `ecs`, `ecs/system` and engine `god` API only; nothing in the engine knows about Lua.
+- **A separate module** (`github.com/weakpixel/contrib/lua`, in the `lua/` folder of weakpixel/contrib), the only place gopher-lua is imported. It uses exported `ecs`, `ecs/system` and weakpixel engine `god` API only; nothing in the weakpixel engine knows about Lua.
 - **One `Runtime` per World**: one sandboxed `lua.LState`, single-goroutine like the World.
 - **A script is a `system.Runner`** (`*System`, also an `Initializer`). `Init` loads and checks the script, so a typo surfaces before the first tick, and the system plugs into any `Schedule`, including `game.Engine`'s stages.
 - **Pure Go Lua (GopherLua, Lua 5.1)**: no cgo, so the module cross-compiles like the rest of the project.

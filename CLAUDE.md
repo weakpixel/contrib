@@ -1,6 +1,6 @@
 # contrib
 
-Optional add-on modules for the Weakpixel Engine (repository weakpixel/engine). Every contribution is a folder with its own `go.mod` (module `github.com/weakpixel/contrib/<name>`), README, docs and tests. The engine's code, docs and rules live in the engine repository; read its CLAUDE.md and `doc/` for anything about the engine.
+Optional add-on modules for the Weakpixel Engine (repository weakpixel/engine). Every contribution is a folder with its own `go.mod` (module `github.com/weakpixel/contrib/<name>`), README, docs and tests. The weakpixel engine's code, docs and rules live in the weakpixel engine repository; read its CLAUDE.md and `doc/` for anything about the engine.
 
 | Path | What |
 | --- | --- |
@@ -18,14 +18,14 @@ make wasm-test   # every module under GOOS=js GOARCH=wasm (Node)
 make -C lua bench
 ```
 
-Run `make all` and `make wasm-test` once before opening a PR; CI runs both and fails on a generate or gofmt diff. While iterating, run only the tests of the package you changed. The engine repository is private for now: `GOPRIVATE=github.com/weakpixel/engine` (the Makefiles export it).
+Run `make all` and `make wasm-test` once before opening a PR; CI runs both and fails on a generate or gofmt diff. While iterating, run only the tests of the package you changed. The weakpixel engine repository is private for now: `GOPRIVATE=github.com/weakpixel/engine` (the Makefiles export it).
 
 ## Rules
 
-- **Engine changes go to weakpixel/engine first.** A contribution that needs an engine change waits for the engine PR to merge, then bumps `github.com/weakpixel/engine` in its `go.mod`. Work on both with an untracked `go.work`, never a committed `replace`. The engine is pinned at a pseudo-version of its `main` until it is tagged.
-- **Nothing in the engine depends on a contribution.** The engine links to them in docs only.
+- **Weakpixel engine changes go to weakpixel/engine first.** A contribution that needs a weakpixel engine change waits for the weakpixel engine PR to merge, then bumps `github.com/weakpixel/engine` in its `go.mod`. Work on both with an untracked `go.work`, never a committed `replace`. The weakpixel engine is pinned at a pseudo-version of its `main` until it is tagged.
+- **Nothing in the weakpixel engine depends on a contribution.** The weakpixel engine links to them in docs only.
 - **One module per folder, no shared code between modules.** A new contribution is added to `MODULES` in the root `Makefile` and to the table in `README.md`.
-- **Lua module:** from the engine module it may import only `god` (`deps_test.go` enforces it, so no Ebiten in its dependency list); no cgo, it must build for js/wasm.
+- **Lua module:** from the weakpixel engine module it may import only `god` (`deps_test.go` enforces it, so no Ebiten in its dependency list); no cgo, it must build for js/wasm.
 - **Never hand-edit a generated file** (`zz__gen.go`, GOD files): run `go generate ./...`.
 - **Build outputs go into `build/`** (`go build -o build/<name>`), which is ignored. Never commit binaries or `*.test` files. Before every commit run `git status --short` and `git diff --cached --stat`, and stage files by name, not with `git add -A` or `git add .`.
 - **Versions stay 0.** No tag or release without the maintainer's word (module-folder tags such as `lua/v0.0.1`), and no backward compatibility shims before a release.

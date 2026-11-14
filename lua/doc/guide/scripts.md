@@ -75,7 +75,7 @@ return {
 }
 ```
 
-A non-empty key needs a resolver on the world (`god.SetAssetResolver`, in the engine `resolver.Install`). Without one, reading a set handle or writing a non-empty key raises `no god.AssetResolver set`. A bad key: `resolve <kind> asset "<key>": <error>`. `world.spawn`/`world.set` tables accept asset keys too, but may **not** contain `x-runtime` fields.
+A non-empty key needs a resolver on the world (`god.SetAssetResolver`, in the weakpixel engine `resolver.Install`). Without one, reading a set handle or writing a non-empty key raises `no god.AssetResolver set`. A bad key: `resolve <kind> asset "<key>": <error>`. `world.spawn`/`world.set` tables accept asset keys too, but may **not** contain `x-runtime` fields.
 
 ## Pointers are short-lived
 

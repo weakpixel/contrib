@@ -1,6 +1,6 @@
 # lua
 
-Lua (GopherLua) systems for the [Weakpixel Engine](https://github.com/weakpixel/engine), driven by registered Game Object schemas. Module `github.com/weakpixel/contrib/lua`, package `ecslua`. It uses the `god` package of the engine, the [ECS](https://github.com/weakpixel/ecs) and [GopherLua](https://github.com/yuin/gopher-lua); the engine does not know about it.
+Lua (GopherLua) systems for the [Weakpixel Engine](https://github.com/weakpixel/engine), driven by registered Game Object schemas. Module `github.com/weakpixel/contrib/lua`, package `ecslua`. It uses the `god` package of the weakpixel engine, the [ECS](https://github.com/weakpixel/ecs) and [GopherLua](https://github.com/yuin/gopher-lua); the weakpixel engine does not know about it.
 
 ```bash
 go get github.com/weakpixel/contrib/lua
@@ -10,7 +10,7 @@ go get github.com/weakpixel/contrib/lua
 import ecslua "github.com/weakpixel/contrib/lua"
 ```
 
-A Lua system is a `system.Runner`, so it plugs into the engine's stages with `AddRunner`. How to write the script and the Go side: [Getting started](doc/guide/getting-started.md).
+A Lua system is a `system.Runner`, so it plugs into the weakpixel engine's stages with `AddRunner`. How to write the script and the Go side: [Getting started](doc/guide/getting-started.md).
 
 - **Using it:** [Lua guide](doc/guide/README.md).
 - **How it is built:** [Lua binding design](doc/design.md).
@@ -24,4 +24,4 @@ make stubs   # LuaLS stubs of the example in build/example.lua
 make wasm-test
 ```
 
-The engine repository is private for now: `GOPRIVATE=github.com/weakpixel/engine` (the Makefile exports it).
+The weakpixel engine repository is private for now: `GOPRIVATE=github.com/weakpixel/engine` (the Makefile exports it).
